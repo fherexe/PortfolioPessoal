@@ -294,12 +294,13 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 80vh;
 }
 
 #section4 h2 {
     font-size: max(1.4em, 2.1vw);
     font-weight: 500;
-    margin: 10% 0 5% 0;
+    margin: 0 0 5% 0;
     border-left: 2px solid var(--primaryBtn);
     padding-left: 10px;
     text-transform: uppercase;
@@ -352,7 +353,7 @@ button[type="submit"]:hover {
 /* ----------------------- Footer ------------------ */
 
 footer {
-    min-height: 15vh;
+    min-height: 10vh;
     background: var(--bg2);
     padding: 2% 15%;
 }
@@ -404,8 +405,6 @@ footer .social {
     margin: 1% 0;
 }
 
-
-
 /* -------------------------------- Responsive config ------------------------------------------- */
 @media screen and (max-width: 850px) {
     section {
@@ -432,7 +431,6 @@ footer .social {
         justify-content: center;
     }
 
-
     .mobile-off {
         display: none;
     }
@@ -440,7 +438,6 @@ footer .social {
     .mobile-on {
         display: block;
     }
-
 
     #section2 p {
         width: 100%;
@@ -498,8 +495,4 @@ footer .social {
     footer .social {
         margin: 20px;
     }
-
-
-
-
 }
