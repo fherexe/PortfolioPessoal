@@ -1,0 +1,155 @@
+header {
+  padding:0 5%;
+  display: flex;
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background: var(--bg);
+  top: 0;
+  box-shadow: -1px -6px 9px 0px rgba(0, 0, 0, 0.705);
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav img {
+  width: 50px;
+  margin-top: 3px;
+}
+
+nav img:hover {
+  opacity: 0.8;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  justify-content: right;
+}
+
+.menu li a {
+  margin: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  opacity: 0.9;
+}
+
+
+/* Menu Hamburger */
+.hamburger-menu {
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  display: none;
+  transition: .3s ease-in-out;
+  margin-bottom: 6px;
+  padding: 12px 4px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 32px;
+  height: 3px;
+  background-color: var(--primaryBtn);
+  margin-top: 6px;
+  transition: .3s ease-in-out;
+  border-radius: 1.5px;
+
+}
+
+.active .bar1 {
+  margin-top: -3.2px;
+  transform: rotate(50deg);
+}
+
+.active .bar2 {
+  background: transparent;
+  margin-top: -3.2px;
+
+}
+
+
+.active .bar3 {
+  margin-top: -3.2px;
+  transform: rotate(-50deg);
+
+}
+
+.contactBtn {
+  background: var(--primaryBtn);
+  padding: 6px 15px;
+  border-radius: 3px;
+}
+
+.menu li .contactBtn:hover {
+  opacity: 1;
+  background:var(--other1);
+}
+
+.menu li .contactBtn {
+  color: var(--bg);
+}
+
+
+@media (max-width:850px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav img {
+    width: 45px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 99;
+  }
+
+  .hamburger-menu.active {
+    padding-top: 19px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu {
+    background: #000000ea;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding-top: 10vh;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 70vw;
+    z-index: 2;
+
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+}

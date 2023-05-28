@@ -1,0 +1,505 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --bg: #0D121E;
+    --bg2: #080C14;
+    --bg3: #FFF7EC;
+
+    --title: var(--complement);
+    --text: #fff;
+    --primaryBtn: #dbb274;
+    --secundaryBtn: #07060B;
+
+    --other1: #fddeb0;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 15%;
+}
+
+
+button {
+    background: none;
+    border: none;
+}
+
+.access-button {
+    width: 14% !important;
+    margin: 5% 2.6% 0 0 !important;
+    border-radius: 50%;
+}
+
+.access-button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 300ms;
+}
+
+.pc-off {
+    display: none;
+}
+
+
+
+/* ----------------------- Section 1 ------------------ */
+#section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 88vh;
+}
+
+
+#section1 h1 {
+    font-size: max(1.6em, 3.2vw);
+    font-weight: 600;
+    text-transform: uppercase;
+    /** medida responsiva **/
+}
+
+#section1 img {
+    display: block;
+    width: 300px;
+
+}
+
+#section1 h1 span {
+    display: block;
+    color: var(--complement);
+}
+
+#section1 h2 {
+    color: var(--text);
+    letter-spacing: 1.2px;
+    font-size: max(1em, 1.4vw);
+    font-weight: 300;
+}
+
+#section1 span {
+    display: none;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 3%;
+}
+
+.social i {
+    font-size: 2.1em;
+    color: var(--primaryBtn);
+}
+
+.social i:hover {
+    color: var(--other1);
+}
+
+#section1 .social span {
+    display: block;
+}
+
+
+.social span i {
+    font-size: 1.7em;
+
+}
+
+.title {
+    background: var(--bg);
+}
+
+
+/* ----------------------- Section 2 ------------------------ */
+
+
+#section2 {
+    display: flex;
+    padding-top: 12vh;
+    width: 100%;
+    min-height: 102vh;
+    background: var(--bg3);
+    color: var(--bg);
+}
+
+.section2-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#section2 h3 {
+    font-size: max(1.4em, 2.1vw);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-left: 2px solid var(--primaryBtn);
+    padding-left: 10px;
+}
+
+#section2 h2 {
+    font-size: max(1.3em, 1.6vw);
+    font-weight: 500;
+}
+
+#section2 h2 span a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primaryBtn);
+}
+
+#section2 p {
+    width: 78%;
+    line-height: 26px;
+}
+
+.section2-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.section2-container ul {
+    margin: 10px 0;
+    padding: 20px;
+    border-left: 3px solid var(--bg);
+
+}
+
+.section2-container li {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+
+.img-web {
+    background-image: url(/img/itens/dots.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 0 90%;
+    padding: 20px;
+}
+
+/*  ----------------------- Section 3   ----------------------------   */
+#section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: var(--bg2);
+}
+
+
+#section3 h2 {
+    font-size: max(1.4em, 2.1vw);
+    font-weight: 500;
+    margin: 10% 0 5% 0;
+    border-left: 2px solid var(--primaryBtn);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+#section3 h3 {
+    font-size: 24px;
+    color: var(--primaryBtn);
+    margin-bottom: 10px;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+#section3 ul {
+    list-style: circle;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.website img {
+    width: 350px;
+}
+
+.website-btn {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.website-btn a {
+    color: var(--bg);
+    font-weight: 500;
+    padding: 5px 20px;
+    background: var(--primaryBtn);
+    border-radius: 4px;
+}
+
+.website-btn a:hover {
+    background: var(--other1);
+}
+
+.projects {
+    margin: 5% 0 10% 0;
+    text-align: center;
+}
+
+.projects a {
+    color: var(--primaryBtn);
+    border: solid var(--primaryBtn);
+    border-radius: 12px 0 12px 0;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+}
+
+
+.projects a:hover {
+    color: var(--bg);
+    background: var(--primaryBtn);
+    transition: 200ms ease-in-out;
+}
+
+/*  ----------------------- Section 4   ----------------------------   */
+
+#section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section4 h2 {
+    font-size: max(1.4em, 2.1vw);
+    font-weight: 500;
+    margin: 10% 0 5% 0;
+    border-left: 2px solid var(--primaryBtn);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.section4-container {
+    display: flex;
+    justify-content: left;
+    gap: 1%;
+}
+
+form {
+    width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+button[type="submit"] {
+    background-color: var(--primaryBtn);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--bg);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--other1);
+}
+
+
+#msn {
+    width: 50%;
+    height: 400px;
+}
+
+/* ----------------------- Footer ------------------ */
+
+footer {
+    min-height: 15vh;
+    background: var(--bg2);
+    padding: 2% 15%;
+}
+
+footer span {
+    color: #fff;
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container a {
+    color: #dbb274;
+}
+
+.footer-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px;
+}
+
+.footer-container ul li {
+    margin-top: 4px;
+    letter-spacing: 1.5px;
+}
+
+footer hr {
+    margin: 2% 5%;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+footer .social {
+    justify-content: center;
+    margin: 1% 0;
+}
+
+
+
+/* -------------------------------- Responsive config ------------------------------------------- */
+@media screen and (max-width: 850px) {
+    section {
+        min-height: 100vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    #section1 {
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    #section1 img {
+        width: 40%;
+
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+
+    .mobile-off {
+        display: none;
+    }
+
+    .mobile-on {
+        display: block;
+    }
+
+
+    #section2 p {
+        width: 100%;
+    }
+
+    #section2 h2 span a {
+        display: block;
+    }
+
+    .section2-container ul {
+        margin: 10px 0;
+        border-left: none;
+
+    }
+
+    .section3-container>div {
+        margin-bottom: 10%;
+    }
+
+    .website {
+        flex-direction: column;
+    }
+
+    .web2 {
+        flex-direction: column-reverse;
+    }
+
+    .section4-container {
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #msn {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+
+    .footer-container h4 {
+        margin: 20px 0;
+    }
+
+    .footer-container ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer .social {
+        margin: 20px;
+    }
+
+
+
+
+}
