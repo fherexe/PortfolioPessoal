@@ -236,7 +236,7 @@ button {
 .website {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 5%;
 }
 

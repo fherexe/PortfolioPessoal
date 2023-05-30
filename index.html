@@ -16,8 +16,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio - Fernando Souza</title>
     <style>
-        body .uwy.userway_p1 .uai {
-            top: 38% !important;
+       .uwy .uai {
+            top: 38% !important;       
         }
     </style>
 
@@ -268,60 +268,6 @@
                     <button type="submit">Enviar</button>
                 </form>
 
-
-                <!------- PHP
-                <div id="msn">
-                    
-                    require 'vendor/autoload.php'; // Certifique-se de ter a biblioteca sendgrid/sendgrid instalada
-                    
-                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                        // Verifica se todos os campos foram preenchidos
-                        if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['mensagem'])) {
-                            // Campos do formulário
-                            $nome = $_POST['nome'];
-                            $email = $_POST['email'];
-                            $mensagem = $_POST['mensagem'];
-
-                            // Configurações de e-mail
-                            $para = 'fernandosouza.fieee@gmail.com'; // Insira o seu e-mail aqui
-                            $assuntoEmail = 'Novo contato do site';
-
-                            // Configuração do SendGrid
-                            $apiKey = 'Deu ruim';
-                            $emailSender = 'teste'; // E-mail remetente
-                    
-                            // Monta o corpo do e-mail
-                            $corpoEmail = "Nome: $nome\n";
-                            $corpoEmail .= "E-mail: $email\n";
-                            $corpoEmail .= "Mensagem:\n$mensagem";
-
-                            // Envia o e-mail usando o SendGrid
-                            $email = new \SendGrid\Mail\Mail();
-                            $email->setFrom($emailSender, 'Seu Nome');
-                            $email->setSubject($assuntoEmail);
-                            $email->addTo($para);
-                            $email->addContent("text/plain", $corpoEmail);
-
-                            $sendgrid = new \SendGrid($apiKey);
-                            try {
-                                $response = $sendgrid->send($email);
-                                if ($response->statusCode() === 202) {
-                                    echo 'E-mail enviado com saaaaaaaaucesso!';
-                                } else {
-                                    echo 'Ocorreu um erro ao enviar o e-mail.';
-                                }
-                            } catch (Exception $e) {
-                                echo 'Ocorreu um erro ao enviar o e-mail: ' . $e->getMessage();
-                            }
-                        } else {
-                            echo 'Por favor, preencha todos os campos do formulário.';
-                        }
-                    } else {
-                        echo 'Método de requisição inválido.';
-                    }
-                    
-                </div>
-            -->
             </div>
         </section>
 
@@ -380,7 +326,7 @@
         </script>
 
         <!----------------------------- Acessibilidade -------------------------------->
-
+  
         <div vw class="enabled">
             <div accesskey="5" tabindex="0" vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
@@ -388,16 +334,18 @@
             </div>
         </div>
 
+
         <script>
             AOS.init({ //Biblioteca AOS
                 duration: 1100
             });
         </script>
 
-        
+
         <script src="https://cdn.userway.org/widgetapp/2023-05-18/widget_app_base_1684415199146.js" async=""
-        id="a11yWidgetSrc"></script>
-<!------------
+            id="a11yWidgetSrc">
+        </script>
+        <!------------
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script> -------------------------------------->
 </body>
