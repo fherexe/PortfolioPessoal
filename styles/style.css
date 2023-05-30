@@ -94,6 +94,7 @@ button {
 #section1 h1 span {
     display: block;
     color: var(--complement);
+    
 }
 
 #section1 h2 {
@@ -135,7 +136,6 @@ button {
 }
 
 .title {
-    background: var(--bg);
 }
 
 
