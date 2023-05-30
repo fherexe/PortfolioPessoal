@@ -240,6 +240,10 @@ button {
     gap: 5%;
 }
 
+.website > div {
+    margin-top: 20px;
+}
+
 #section3 ul {
     list-style: circle;
     list-style-type: circle;
