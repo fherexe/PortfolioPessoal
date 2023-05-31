@@ -296,7 +296,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 #section4 h2 {
@@ -368,8 +368,12 @@ button[type="submit"]:hover {
     border-radius: 4px;
 }
 
+#voltarTopo:hover {
+    background:var(--other1);
+}
+
 footer {
-    min-height: 10vh;
+    min-height: 8vh;
     background: var(--bg2);
     padding: 2% 15%;
 }

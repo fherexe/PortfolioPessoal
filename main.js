@@ -2,13 +2,30 @@
 
 const menuHamburger = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.menu');
+const content = document.querySelector('.content');
+const navLinks = document.querySelectorAll('.navLink');
 
-menuHamburger.addEventListener('click', () =>{
+menuHamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
   menuHamburger.classList.toggle('active');
-  
-  //toggle vai definir que quando clicar vai fazer a ação e quando clicar novamente vai desfazer
-} ); //atribuir ação a uma função 
+});
+
+content.addEventListener('click', () => {
+  if (menuHamburger.classList.contains('active')) {
+    menu.classList.remove('active');
+    menuHamburger.classList.remove('active');
+  }
+});
+
+// Itera sobre cada elemento com a classe "navLink"
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    if (menuHamburger.classList.contains('active')) {
+      menu.classList.remove('active');
+      menuHamburger.classList.remove('active');
+    }
+  });
+});
 
 
 //-------------------- Marque ---------------------
@@ -39,3 +56,5 @@ function voltarAoTopo() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//----------------reCAPTCHA------------

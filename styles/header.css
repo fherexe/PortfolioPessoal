@@ -100,14 +100,18 @@ nav img:hover {
   border-radius: 3px;
 }
 
-.menu li .contactBtn:hover {
-  opacity: 1;
-  background:var(--other1);
-}
-
 .menu li .contactBtn {
   color: var(--bg);
 }
+
+.menu li .contactBtn:hover {
+  opacity: 1;
+  background:var(--other1);
+  border: none;
+
+}
+
+
 
 
 @media (max-width:850px) {
