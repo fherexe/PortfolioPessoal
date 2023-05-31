@@ -43,10 +43,10 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 window.onscroll = function() {scrollFunction()};
     
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 200) {
-    document.querySelector(".voltarTopo").style.display = "block";
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
+    document.getElementById("voltarTopo").style.display = "block";
   } else {
-    document.querySelector(".voltarTopo").style.display = "none";
+    document.getElementById("voltarTopo").style.display = "none";
   }
 }
 

@@ -54,13 +54,29 @@ button {
     border: none;
 }
 
+#voltarTopo {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primaryBtn);
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+#voltarTopo:hover {
+    background:var(--other1);
+}
+
 .access-button {
     border-radius: 50%;
     width: 45px !important;
 }
-
-
-
 
 .pc-off {
     display: none;
@@ -353,24 +369,6 @@ button[type="submit"]:hover {
 }
 
 /* ----------------------- Footer ------------------ */
-.voltarTopo {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: var(--primaryBtn);
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-}
-
-.voltarTopo:hover {
-    background:var(--other1);
-}
 
 footer {
     min-height: 8vh;
