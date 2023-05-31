@@ -17,7 +17,6 @@ content.addEventListener('click', () => {
   }
 });
 
-// Itera sobre cada elemento com a classe "navLink"
 navLinks.forEach(navLink => {
   navLink.addEventListener('click', () => {
     if (menuHamburger.classList.contains('active')) {
@@ -39,13 +38,12 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-
 //-------------------- Botão voltar ao topo  ---------------------
 
 window.onscroll = function() {scrollFunction()};
     
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
     document.getElementById("voltarTopo").style.display = "block";
   } else {
     document.getElementById("voltarTopo").style.display = "none";

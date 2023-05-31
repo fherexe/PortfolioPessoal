@@ -39,7 +39,6 @@ nav img:hover {
 
 .menu li a {
   margin: 12px;
-  padding-bottom: 10px;
   text-decoration: none;
   font-weight: 600;
   color: var(--text);
@@ -50,7 +49,8 @@ nav img:hover {
 
 .menu li a:hover {
   opacity: 0.9;
-  border-bottom: 3.5px solid var(--primaryBtn);
+  border-bottom: 3.6px solid var(--primaryBtn);
+  padding-bottom: 13px;
 }
 
 
@@ -108,6 +108,8 @@ nav img:hover {
   opacity: 1;
   background:var(--other1);
   border: none;
+  padding-bottom: 6px;
+
 
 }
 
