@@ -53,15 +53,12 @@ button {
 }
 
 .access-button {
-    width: 14% !important;
-    margin: 5% 2.6% 0 0 !important;
     border-radius: 50%;
+    width: 45px !important;
 }
 
-.access-button:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 300ms;
-}
+
+
 
 .pc-off {
     display: none;

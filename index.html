@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="widgetapp.js"></script>
     <title>Portfolio - Fernando Souza</title>
     <style>
         .uwy .uai {
@@ -269,96 +270,104 @@
                         <label for="mensagem">Mensagem:</label>
                         <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
                         <br>
-                 
-                        <div class="g-recaptcha" data-sitekey="6Ler4FEmAAAAAKvsV815lvUa6lU0sMCTy_1zLGwT"></div>  
-               
-                <br>
-                <button type="submit">Enviar</button>
-                </form>
 
-        </div>
-        </section>
+                        <div class="g-recaptcha" data-sitekey="6Ler4FEmAAAAAKvsV815lvUa6lU0sMCTy_1zLGwT"></div>
 
-        <button id="voltarTopo" onclick="voltarAoTopo()"><i class="fas fa-arrow-up"></i></button>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                </div>
+            </section>
+
+            <button id="voltarTopo" onclick="voltarAoTopo()"><i class="fas fa-arrow-up"></i></button>
 
 
-        <footer>
-            <div class="footer-container">
-                <h4>Mapa do site</h4>
-                <ul>
-                    <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">Sobre mim</a></li>
-                    <li><a href="projects.html">Projetos</a></li>
-                </ul>
+            <footer>
+                <div class="footer-container">
+                    <h4>Mapa do site</h4>
+                    <ul>
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">Sobre mim</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                    </ul>
 
+                </div>
+                <hr>
+                <p>&copy;2023 Site criado por Fernando Souza, todos direitos reservados.</p>
+                <div class="social">
+                    <a href="https://github.com/fherexe" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-github-alt"></i></a>
+
+                    <a href="https://www.instagram.com/fherexe/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/fherexe/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    </a>
+                </div>
+            </footer>
+
+            <!--------------------------------------- Scripts--------------=====-------------------->
+            <script src="main.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+            <script>
+                VANTA.BIRDS({
+                    el: "#section1",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    backgroundColor: 0x0D121E,
+                    color1: 0xd49d68,
+                    color2: 0xd49d68,
+                    colorMode: "lerpGradient",
+                    birdSize: 1.6,
+                    separation: 45.00,
+                    cohesion: 39.00,
+                    quantity: 2.00,
+                    backgroundAlpha: 0.49
+                })
+            </script>
+
+            <!----------------------------- Acessibilidade -------------------------------->
+
+            <div vw class="enabled">
+                <div accesskey="5" tabindex="0" vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper" tabindex="0"></div>
+                </div>
             </div>
-            <hr>
-            <p>&copy;2023 Site criado por Fernando Souza, todos direitos reservados.</p>
-            <div class="social">
-                <a href="https://github.com/fherexe" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-github-alt"></i></a>
 
-                <a href="https://www.instagram.com/fherexe/" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-instagram"></i></a>
-                </a>
+            <script>
+                AOS.init({ //Biblioteca AOS
+                    duration: 1100
+                });
+            </script>
 
-                <a href="https://www.linkedin.com/in/fherexe/" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                </a>
-            </div>
-        </footer>
 
-        <!--------------------------------------- Scripts--------------=====-------------------->
-        <script src="main.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-        <script>
-            VANTA.BIRDS({
-                el: "#section1",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                backgroundColor: 0x0D121E,
-                color1: 0xd49d68,
-                color2: 0xd49d68,
-                colorMode: "lerpGradient",
-                birdSize: 1.6,
-                separation: 45.00,
-                cohesion: 39.00,
-                quantity: 2.00,
-                backgroundAlpha: 0.49
-            })
-        </script>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
 
-        <!----------------------------- Acessibilidade -------------------------------->
 
-        <div vw class="enabled">
-            <div accesskey="5" tabindex="0" vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper" tabindex="0"></div>
-            </div>
-        </div>
 
-        <script>
-            AOS.init({ //Biblioteca AOS
-                duration: 1100
-            });
-        </script>
 
-        <script src="https://cdn.userway.org/widgetapp/2023-05-18/widget_app_base_1684415199146.js" async=""
-            id="a11yWidgetSrc">
-        </script>
-
-        <script src='https://www.google.com/recaptcha/api.js'></script>
-
-        <!------------
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script> -------------------------------------->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+              <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+              <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+              </script>
 </body>
 
 </html>
