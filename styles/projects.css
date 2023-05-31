@@ -34,6 +34,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+footer {
+    background-color: var(--bg);
+}
+
 @media screen and (max-width: 850px) {
     body {
         padding-top: 5vh;

@@ -353,7 +353,7 @@ button[type="submit"]:hover {
 }
 
 /* ----------------------- Footer ------------------ */
-#voltarTopo {
+.voltarTopo {
     display: none;
     position: fixed;
     bottom: 50px;
@@ -368,7 +368,7 @@ button[type="submit"]:hover {
     border-radius: 4px;
 }
 
-#voltarTopo:hover {
+.voltarTopo:hover {
     background:var(--other1);
 }
 
