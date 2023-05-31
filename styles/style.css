@@ -198,7 +198,7 @@ button {
 
 
 .img-web {
-    background-image: url(img/itens/dots.png);
+    background-image: url('img/itens/dots.png');
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: 0 90%;
@@ -288,6 +288,7 @@ button {
     background: var(--primaryBtn);
     transition: 200ms ease-in-out;
 }
+
 
 /*  ----------------------- Section 4   ----------------------------   */
 
