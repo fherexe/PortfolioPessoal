@@ -135,8 +135,6 @@ button {
 
 }
 
-.title {
-}
 
 
 /* ----------------------- Section 2 ------------------------ */
@@ -201,7 +199,7 @@ button {
 
 
 .img-web {
-    background-image: url(img/itens/dots.png);
+    background-image: url(/img/itens/dots.png);
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: 0 90%;
@@ -355,18 +353,25 @@ button[type="submit"]:hover {
 }
 
 /* ----------------------- Footer ------------------ */
+#voltarTopo {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primaryBtn);
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
 
 footer {
     min-height: 10vh;
     background: var(--bg2);
     padding: 2% 15%;
-}
-
-footer span {
-    color: #fff;
-    margin-right: 2px;
-    font-size: 14px;
-    font-weight: 700;
 }
 
 footer h4 {
