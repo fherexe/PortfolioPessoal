@@ -43,7 +43,7 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 window.onscroll = function() {scrollFunction()};
     
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 300) {
     document.getElementById("voltarTopo").style.display = "block";
   } else {
     document.getElementById("voltarTopo").style.display = "none";

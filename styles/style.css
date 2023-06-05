@@ -54,7 +54,7 @@ button {
     border: none;
 }
 
-#voltarTopo {
+.fa-arrow-up {
     display: none;
     position: fixed;
     bottom: 50px;
@@ -69,7 +69,7 @@ button {
     border-radius: 4px;
 }
 
-#voltarTopo:hover {
+.fa-arrow-up:hover {
     background:var(--other1);
 }
 
