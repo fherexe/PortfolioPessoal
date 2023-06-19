@@ -26,8 +26,6 @@
     --other1: #fddeb0;
 }
 
-
-
 body {
     background-color: var(--bg);
     color: var(--text);
