@@ -55,4 +55,14 @@ function voltarAoTopo() {
   document.documentElement.scrollTop = 0;
 }
 
-//----------------reCAPTCHA------------
+//----------------Desativar AOS em celulares -----------
+
+window.addEventListener('DOMContentLoaded', function () {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (screenWidth < 700) { // Altere o valor 768 para o tamanho de tela desejado para dispositivos móveis
+      AOS.init({
+          disable: true // Desativa o AOS
+      });
+  }
+});
