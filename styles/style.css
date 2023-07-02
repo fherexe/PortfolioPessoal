@@ -312,7 +312,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 #section4 h2 {
