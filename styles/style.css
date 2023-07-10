@@ -146,7 +146,7 @@ button {
 
 
 .social span i {
-    font-size: 1.7em;
+    font-size: 1.8em;
 
 }
 
@@ -304,6 +304,7 @@ button {
     background: var(--primaryBtn);
     transition: 200ms ease-in-out;
 }
+
 
 
 /*  ----------------------- Section 4   ----------------------------   */
@@ -506,3 +507,4 @@ footer .social {
         margin: 20px;
     }
 }
+
