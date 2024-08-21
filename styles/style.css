@@ -90,11 +90,12 @@ button {
     align-items: center;
     justify-content: space-between;
     min-height: 88vh;
+    padding: 0 20%;
 }
 
 
 #section1 h1 {
-    font-size: max(1.6em, 3.2vw);
+    font-size: max(1.4em, 3vw);
     font-weight: 600;
     text-transform: uppercase;
     /** medida responsiva **/
