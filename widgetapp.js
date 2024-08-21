@@ -1,5 +1,5 @@
-      (function(d){
-         var s = d.createElement("script");
+      //(function(d){
+        // var s = d.createElement("script");
          /* uncomment the following line to override default position*/
          /* s.setAttribute("data-position", 1);*/
          /* uncomment the following line to override default size (values: small, large)*/
@@ -16,7 +16,7 @@
          /* s.setAttribute("data-mobile", true);*/
          /* uncomment the following line to set custom trigger action for accessibility menu*/
          /* s.setAttribute("data-trigger", "triggerId")*/
-         s.setAttribute("data-color", "#dbb274");
-         s.setAttribute("data-account", "HzqM8srn1x");
-         s.setAttribute("src", "https://cdn.userway.org/widget.js");
-         (d.body || d.head).appendChild(s);})(document)
+         //s.setAttribute("data-color", "#dbb274");
+         //s.setAttribute("data-account", "HzqM8srn1x");
+         //s.setAttribute("src", "https://cdn.userway.org/widget.js");
+         //(d.body || d.head).appendChild(s);})(document)
